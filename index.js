@@ -10,7 +10,7 @@ dotenv.config();
 mongoose.connect(
     process.env.MONGO_URL
 )
-    .then(() =>console.log('DBConnection, successful!'))
+    .then(() =>console.log('DB Connection successful!'))
     .catch((err)=>{console.log(err)});
 
 app.use(express.json())
